@@ -119,7 +119,7 @@ extension GameScene {
     }
     
     func addBall(percentRadius: CGFloat, _pos: CGPoint) {
-        let randName = "_basketball_\(Int.random(in: 1...3))"
+        let randName = "_fruit_\(Int.random(in: 1...3))"
         let ball = BallObject(imageNamed: randName, size: .sizeOfNode(_sizeOfTexture: SKTexture(imageNamed: "Images/" + randName).size(), _sizeofNode: .withPercentScaled(roundByWidth: percentRadius)) , position: _pos, zPosition: 3)
         
         addChild(ball)
